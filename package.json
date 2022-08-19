@@ -1,0 +1,56 @@
+{
+  "name": "next-medusa-events-frontend",
+  "description": "Get your next React project up and running quickly with Next.js, Theme UI, MDX and more.",
+  "version": "0.1.5",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cypress": "cypress open",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext=ts,tsx",
+    "lint:fix": "eslint . --ext=ts,tsx --fix",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,tsx}\"",
+    "format-watch": "npm run format && onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
+    "test": "tsc && cypress run",
+    "deploy": "npm run test && git push origin main",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.3",
+    "@emotion/react": "^11.10.0",
+    "@mdx-js/loader": "^2.1.3",
+    "@mdx-js/react": "1.6.22",
+    "@next/mdx": "^11.1.2",
+    "next": "^12.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.14.7"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@types/node": "^16.10.9",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "cypress": "^10.6.0",
+    "eslint": "^8.22.0",
+    "eslint-config-next": "^12.2.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-jest": "^26.8.3",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-testing-library": "^5.6.0",
+    "jest": "^28.1.3",
+    "onchange": "^7.1.0",
+    "typescript": "^4.7.4"
+  },
+  "resolutions": {
+    "@babel/runtime": "^7.12.5"
+  },
+  "repository": "https://github.com/johnpolacek/next-project-starter",
+  "license": "MIT-0"
+}
